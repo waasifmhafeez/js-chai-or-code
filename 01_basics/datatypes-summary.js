@@ -149,3 +149,40 @@ myFunc();
 //     7.BigInt (ES11):
 //         Represents large integers that cannot be represented by the Number type.
 //         The range is practically unlimited and depends on available memory.
+
+
+//  *************** Stack (Primitive) , Heap (Non-Primitive) *********************
+
+// in primitive types Stack Memory is used and in Non-Primitive types Heap Meamory is used
+
+// when every you are working with stack then you get the copy of that variable or etc
+// but is Heap you get the reference to the object
+
+//  Example
+
+let myYoutubeName = "hiteshChaudary";
+
+let newName = myYoutubeName;
+newName = "ChaiOrCode";
+
+// console.log(myYoutubeName);
+// console.log(newName);
+
+
+//  Heap Example
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upl"
+}
+ 
+let usertwo = userone;
+
+userTwo.email = "hitesh@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// variables only store the momory address of data where its stored inside heap memory
+// so if these variables are only pointing at that address
+// but if change any property for userOne then it will also be changed for userTwo
