@@ -31,6 +31,7 @@ console.log(gameName.length);
 // console.log(gameName.charAt(2));        // it will provide you which character is at index 2 wich "t"
 
 // console.log(gameName.indexof('t'));     // it will provide you the index of first accurance of the giving character, here its 2
+console.log(gameName.lastIndexOf('h'));    // this method will provide the last index of charcter in given string
 
 
 const subString = gameName.substring(0,4);      // it will create a subString out of the orignal string. from index 0 to before index 4. 4 will not be included output: hite
@@ -45,11 +46,15 @@ const anotherStr = gameName.slice(-8,4)
 // console.log(anotherStr);
 
 const strOne = "   hitesh   ";
-console.log(strOne.trim());     // trim method trims the stating and ending spaces, which we dont want to store in out DBs 
+console.log(strOne.trim());     // trim method trims the starting and ending spaces, which we dont want to store in out DBs. it'll not effect spaces in between
 
 const url = "https://hitesh.com/hitesh%20choudary";  // sometime when url have some spaces like "https://wasif hafeez" browser will automatically change it to "https://wasif%20hafeez" so we dont want it to tackle it we will use replace method
 
 console.log(url.replace("%20",'-'));    // here first argument is what you wanna replace and second is with what you wanna replace, we replace %20 with -
+
+//second way of using replace method
+let course = 'JavaScript is not Cool';
+// console.log(course.replace("not","so"));    //first parameter is what you wanna replace, and second parameter is the new value 
 
 console.log(url.includes("hitesh"));  // include will tell if particular string or letter is present in our string, it will return true or false
 
