@@ -60,7 +60,9 @@ console.log(typeof newDate)
 
 // to customise the Date object
 
-newDate.toLocaleString('default', {
+let anotherDate = newDate.toLocaleString('default', {
     weekday: "long",
     
 })
+
+console.log(anotherDate);
