@@ -34,6 +34,33 @@ let myDate = new Date();
 
 // console.log(typeof myDate);
 
+// let myCreatedDate = new Date(2023,0,14); 
 let myCreatedDate = new Date(2023,0,14, 5, 3);        //months will start from zero, that mean zero represents Jan
-console.log(myCreatedDate.toDateString());
-console.log(myCreatedDate.toLocaleString());
+// console.log(myCreatedDate.toDateString());
+// console.log(myCreatedDate.toLocaleString());
+
+// to give date in specific format like mm-dd-yy or yyyy-mm-dd etc
+
+let formatDate = new Date("2023-01-14");
+// let formatDate = new Date("02-15-2023");
+// console.log(formatDate.toLocaleString());
+
+let myTimeStamp = Date.now();
+// console.log(myTimeStamp);       // it provides the milliseconds since 1st jan 1970
+// console.log(formatDate.getTime());      //get milliseconds of since 1st jan 1970 to till provided date
+// console.log(Math.floor(Date.now() / 1000));    // it provides the milli seconds to convert them into secons divide them by 1000. and to remove value after decimal use Mth.floor() or math.round()
+
+//  to get specific thing from date object
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getDate())
+console.log(newDate.getMonth())
+console.log(newDate.getDay())
+console.log(typeof newDate)
+
+// to customise the Date object
+
+newDate.toLocaleString('default', {
+    weekday: "long",
+    
+})
