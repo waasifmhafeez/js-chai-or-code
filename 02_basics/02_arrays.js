@@ -34,3 +34,19 @@ let score2 = 200;
 let score3 = 300;
 
 console.log(Array.of(score1, score2, score3));  // Returns a new array from a set of elements. result : [ 100, 200, 300 ]
+
+// we can merge multiple arrays using concat as well like spread syntax..
+
+// const Array1 = [1,2,3,4,5];
+// const Array2 = [5,6,7,8,9,10];
+// const Array3 = [0,0,0];
+// const Array4 = [1,3,9,19];
+// const concatAll = Array1.concat(Array2, Array3,Array4)
+// console.log("concatinated => ",concatAll)
+
+// Key Takeaways
+
+// 1. push() method in array simply add the array as an new single entity in the existing array.
+// 2. concat() method help us achieving a desisered output, like merging the two array, but the problems with concat are, It complicated to concat more then one array simultaneously and also It takes extra space and do the merging operation.
+// 3. Despite push and concat we should use spread operator.
+// 4. Intresting methods, isArray(), from() and of()
