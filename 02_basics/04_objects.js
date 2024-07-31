@@ -67,3 +67,17 @@ console.log(Object.entries(tinderUser));    // result: [ [ 'id', '123abc' ], [ '
 //Determines whether an object has a property with the specified name
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // returns boolean -- result: true
+
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// normally hum log Object ki properties dit notation kay sath access krte hei user.name. lakin agr humein kafi jaga access kr na ho to bar bar ye likhein gy to time ziada lagy ga..to is k liye ak asan tareeka h
+
+// Object Destructuring
+
+const {courseInstructor, price} = course;
+// const {courseInstructor: teacher} = course;      // if property name is too big, then you can also use some alias or alternate name
+console.log(courseInstructor);          // that's who we can access
