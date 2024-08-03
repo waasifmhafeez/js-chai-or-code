@@ -38,7 +38,7 @@ if(balance < 500){
 
 const userloggedIn = true
 const debitCard = true
-const loggedInFromGoogle = ture
+const loggedInFromGoogle = true
 const loggedInFromMail = false
 
 if(userloggedIn && debitCard && 2==2){      //  && will check both conditions means both condition needs to be true
