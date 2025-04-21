@@ -59,3 +59,4 @@ const iceTeaPrice = 200;
 iceTeaPrice >= 300 ? console.log("price is expensive") : console.log("you can buy one its cheap")
 
 // comment for new commit
+// commit from small laptop
